@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/joshua-prakash-flash-background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.sun img{
+    width: 150px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.sun img:hover{
+    width: 500px;
+    height: 500px;
+    animation-name: example;
+    animation-duration: 3s; 
+}
+.bird img{
+    width: 250px;
+}
+.container img{
+    margin-left: 50%;
+    margin-top: 20%;
+    width: 150px;
+}
+.rotate{
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
